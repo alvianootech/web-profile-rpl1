@@ -11,7 +11,7 @@ require __DIR__ . '/includes/header.php';
     <div>
         <p class="eyebrow">Anggota kelas</p>
         <h1>Kenalan dengan kami</h1>
-        <p class="lead">Daftar siswa ditampilkan sebagai kartu foto. Gunakan kolom pencarian untuk mencari anggota.</p>
+        <p class="lead">Cari nama atau jabatan di kolom pencarian.</p>
     </div>
     <span class="count-pill">
         <?= (int) $kelas['statistik']['siswa'] ?> siswa
@@ -43,7 +43,7 @@ require __DIR__ . '/includes/header.php';
                 <article class="member-card">
                     <div class="member-card__photo">
                         <img src="<?= htmlspecialchars($anggota['foto'], ENT_QUOTES, 'UTF-8') ?>"
-                             alt="Placeholder foto <?= htmlspecialchars($anggota['nama'], ENT_QUOTES, 'UTF-8') ?>"
+                             alt="Foto <?= htmlspecialchars($anggota['nama'], ENT_QUOTES, 'UTF-8') ?>"
                              loading="lazy">
                         <span class="member-card__initials" aria-hidden="true">
                             <?= htmlspecialchars(rpl_initials($anggota['nama']), ENT_QUOTES, 'UTF-8') ?>

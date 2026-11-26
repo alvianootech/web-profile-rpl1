@@ -14,14 +14,14 @@ require __DIR__ . '/includes/header.php';
 <section class="page-head">
     <p class="eyebrow">Galeri</p>
     <h1>Dokumentasi kegiatan</h1>
-    <p class="lead">Foto dikelompokkan berdasarkan kegiatan. Klik foto untuk melihat tampilan lebih besar.</p>
+    <p class="lead">Klik foto untuk memperbesar.</p>
 </section>
 
 <?php foreach ($album as $namaKategori => $fotos): ?>
     <section class="section">
         <div class="section-head section-head--split">
             <div>
-                <p class="eyebrow">Album</p>
+                <p class="eyebrow">Kategori</p>
                 <h2><?= htmlspecialchars($namaKategori, ENT_QUOTES, 'UTF-8') ?></h2>
             </div>
             <span class="count-pill"><?= count($fotos) ?> foto</span>

@@ -9,7 +9,7 @@ require __DIR__ . '/includes/header.php';
 <section class="hero">
     <div class="hero__media">
         <img src="<?= htmlspecialchars($kelas['hero_foto'], ENT_QUOTES, 'UTF-8') ?>"
-             alt="Ilustrasi placeholder kegiatan kelas XII RPL 1">
+             alt="Foto bersama kelas XII RPL 1">
     </div>
 
     <div class="hero__body">
@@ -18,7 +18,7 @@ require __DIR__ . '/includes/header.php';
             Angkatan <?= htmlspecialchars($kelas['angkatan'], ENT_QUOTES, 'UTF-8') ?>
         </p>
         <h1>XII <span>RPL 1</span></h1>
-        <p class="hero__lead"><?= htmlspecialchars($kelas['deskripsi'], ENT_QUOTES, 'UTF-8') ?></p>
+        <p class="hero__lead"><?= htmlspecialchars($kelas['hero_lead'], ENT_QUOTES, 'UTF-8') ?></p>
         <div class="hero__actions">
             <a class="btn btn--primary" href="tentang.php">
                 Tentang Kelas
@@ -33,7 +33,7 @@ require __DIR__ . '/includes/header.php';
 <section class="section section--stats">
     <div class="section-head">
         <p class="eyebrow">Sekilas kelas</p>
-        <h2>Kelas dalam angka</h2>
+        <h2>Angka XII RPL 1</h2>
     </div>
 
     <div class="stats-grid">
@@ -59,7 +59,7 @@ require __DIR__ . '/includes/header.php';
     <div class="section-head section-head--split">
         <div>
             <p class="eyebrow">Dokumentasi</p>
-            <h2>Foto pilihan</h2>
+            <h2>Tiga foto kegiatan</h2>
         </div>
         <a class="text-link" href="galeri.php">
             Lihat galeri
@@ -85,8 +85,8 @@ require __DIR__ . '/includes/header.php';
 <section class="section cta-band">
     <div>
         <p class="eyebrow">Jelajahi</p>
-        <h2>Ingin mengenal lebih dekat?</h2>
-        <p>Singgasana di halaman Tentang, Anggota, dan Galeri.</p>
+        <h2>Tentang, Anggota, Galeri</h2>
+        <p>Cerita kelas, daftar siswa, dan foto kegiatan.</p>
     </div>
     <div class="cta-band__links">
         <a class="btn btn--ghost" href="tentang.php">Tentang</a>
