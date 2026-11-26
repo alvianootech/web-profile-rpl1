@@ -8,3 +8,6 @@ Thumbs.db
 # Rahasia
 .env
 *.key
+
+# File
+INI-CONTOH-READ-ONLY/
