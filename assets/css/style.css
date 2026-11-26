@@ -839,6 +839,11 @@ h3 {
     color: var(--blue);
 }
 
+.creator-list {
+    display: grid;
+    gap: 12px;
+}
+
 .creator {
     display: flex;
     align-items: center;
@@ -849,13 +854,13 @@ h3 {
     display: grid;
     place-items: center;
     flex: none;
-    width: 52px;
-    height: 52px;
+    width: 44px;
+    height: 44px;
     border: 1px solid rgba(157, 192, 227, 0.5);
     border-radius: 50%;
     background: rgba(157, 192, 227, 0.12);
     color: var(--blue);
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 700;
 }
 

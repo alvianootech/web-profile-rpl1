@@ -59,8 +59,25 @@ return [
     ],
 
     'pembuat'    => [
-        'nama'  => 'Nama Pembuat',
-        'peran' => 'Peran',
-        'foto'  => '',
+        [
+            'nama'  => 'ALVIANO IBNU IBRAHIM',
+            'peran' => 'Pengembang 1',
+            'foto'  => '',
+        ],
+        [
+            'nama'  => 'HIZAM AHMAD AL GHIFARI',
+            'peran' => 'Pengembang 2',
+            'foto'  => '',
+        ],
+        [
+            'nama'  => 'KHAISAN RAIHAN SAPUTRA',
+            'peran' => 'Pengembang 3',
+            'foto'  => '',
+        ],
+        [
+            'nama'  => 'RIZKY SUMARSONO',
+            'peran' => 'Pengembang 4',
+            'foto'  => '',
+        ],
     ],
 ];
