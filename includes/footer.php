@@ -3,11 +3,17 @@ if (!isset($kelas)) {
     $kelas = require __DIR__ . '/../data/kelas.php';
 }
 
-$pembuat = $kelas['pembuat'] ?? [
-    'nama' => 'Nama Pembuat',
-    'peran' => 'Peran',
-    'foto' => '',
-];
+$pembuat = $kelas['pembuat'] ?? [];
+
+if (isset($pembuat['nama'])) {
+    $pembuat = [$pembuat];
+}
+
+if (!is_array($pembuat) || $pembuat === []) {
+    $pembuat = [
+        ['nama' => 'Nama Pembuat 1', 'peran' => 'Pengembang 1', 'foto' => ''],
+    ];
+}
 
 $footerLinks = [
     'index.php'   => 'Beranda',
@@ -15,14 +21,6 @@ $footerLinks = [
     'anggota.php' => 'Anggota',
     'galeri.php'  => 'Galeri',
 ];
-
-$initials = '';
-foreach (explode(' ', trim($pembuat['nama'])) as $bagian) {
-    if ($bagian !== '') {
-        $initials .= strtoupper(substr($bagian, 0, 1));
-    }
-}
-$initials = substr($initials, 0, 2);
 ?>
 </main>
 
@@ -48,14 +46,25 @@ $initials = substr($initials, 0, 2);
 
         <div class="footer-column footer-creator">
             <h2 class="footer-heading">Created by</h2>
-            <div class="creator">
-                <div class="creator-avatar" aria-hidden="true">
-                    <?= htmlspecialchars($initials, ENT_QUOTES, 'UTF-8') ?>
-                </div>
-                <div>
-                    <p class="creator-name"><?= htmlspecialchars($pembuat['nama'], ENT_QUOTES, 'UTF-8') ?></p>
-                    <p class="creator-role"><?= htmlspecialchars($pembuat['peran'], ENT_QUOTES, 'UTF-8') ?></p>
-                </div>
+            <div class="creator-list">
+                <?php foreach ($pembuat as $orang): ?>
+                    <?php
+                    $nama = $orang['nama'] ?? 'Nama Pembuat';
+                    $avatar = function_exists('rpl_initials') ? rpl_initials($nama) : substr($nama, 0, 2);
+                    if (preg_match('/\b(\d+)$/', $nama, $cocok)) {
+                        $avatar = strtoupper(substr($nama, 0, 1)) . $cocok[1];
+                    }
+                    ?>
+                    <div class="creator">
+                        <div class="creator-avatar" aria-hidden="true">
+                            <?= htmlspecialchars($avatar, ENT_QUOTES, 'UTF-8') ?>
+                        </div>
+                        <div>
+                            <p class="creator-name"><?= htmlspecialchars($nama, ENT_QUOTES, 'UTF-8') ?></p>
+                            <p class="creator-role"><?= htmlspecialchars($orang['peran'] ?? 'Peran', ENT_QUOTES, 'UTF-8') ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </div>
