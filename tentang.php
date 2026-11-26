@@ -14,7 +14,7 @@ require __DIR__ . '/includes/header.php';
     </div>
     <img class="page-head__art"
          src="<?= htmlspecialchars($kelas['hero_foto'], ENT_QUOTES, 'UTF-8') ?>"
-         alt="Ilustrasi placeholder suasana kelas">
+         alt="Foto suasana kelas XII RPL 1">
 </section>
 
 <section class="section">
@@ -25,7 +25,7 @@ require __DIR__ . '/includes/header.php';
 
     <article class="teacher-card">
         <img src="<?= htmlspecialchars($kelas['wali_kelas']['foto'], ENT_QUOTES, 'UTF-8') ?>"
-             alt="Placeholder foto wali kelas">
+             alt="Foto wali kelas XII RPL 1">
         <div>
             <h3><?= htmlspecialchars($kelas['wali_kelas']['nama'], ENT_QUOTES, 'UTF-8') ?></h3>
             <p class="teacher-card__role"><?= htmlspecialchars($kelas['wali_kelas']['peran'], ENT_QUOTES, 'UTF-8') ?></p>

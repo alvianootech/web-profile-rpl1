@@ -52,7 +52,7 @@ $navItems = [
             <img class="brand__logo" src="assets/images/Logo-Kelas-RPL-1.jpg" alt="Logo XII RPL 1">
             <span class="brand__label">
                 XII RPL 1
-                <span>SMK Negeri 1</span>
+                <span><?= htmlspecialchars($kelas['sekolah'] ?? 'SMK Negeri 1 Pacitan', ENT_QUOTES, 'UTF-8') ?></span>
             </span>
         </a>
 

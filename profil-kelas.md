@@ -8,9 +8,9 @@ informasi kelas, profil siswa, dan dokumentasi foto kegiatan.
 -   **Teknologi:** PHP native (tanpa framework), HTML, CSS, dan
     JavaScript
 -   **Database:** Belum diperlukan untuk versi awal
--   **Desain:** Dark editorial --- navy/charcoal dengan aksen biru muda
-    dan sedikit kuning
--   **Konten awal:** Foto dummy dan data contoh
+-   **Desain:** Terang bersih --- putih/soft blue dengan primary biru
+    academic (`#2563EB`) dan aksen amber (`#F59E0B`)
+-   **Konten awal:** Foto contoh dan data contoh
 -   **Halaman:** Beranda, Tentang, Anggota, Galeri
 -   **Kenangan Kita:** Tidak termasuk untuk saat ini
 
@@ -85,7 +85,7 @@ admin, pengelolaan album melalui website, unggah foto, atau fitur akun.
 
 ## Catatan
 
--   Ganti foto dummy dengan foto asli beresolusi baik sebelum website
+-   Ganti foto contoh dengan foto asli beresolusi baik sebelum website
     dipublikasikan.
 -   Pastikan ada izin untuk memublikasikan foto dan informasi siswa
     maupun guru.

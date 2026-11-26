@@ -1,21 +1,22 @@
 <?php
 /**
- * Data kelas dan konten dummy untuk versi awal.
- * Foto masih memakai placeholder SVG lokal.
+ * Data kelas dan konten contoh untuk versi awal.
+ * Foto memakai berkas contoh lokal.
  */
 
 return [
     'nama'       => 'XII RPL 1',
-    'sekolah'    => 'SMK Negeri 1',
+    'sekolah'    => 'SMK Negeri 1 Pacitan',
     'angkatan'   => '2024',
-    'hero_foto'  => 'assets/images/hero/hero-placeholder.svg',
-    'deskripsi'  => 'Kelas XII RPL 1 yang tumbuh bersama melalui kegiatan belajar, proyek, dan dokumentasi kelas.',
+    'hero_foto'  => 'assets/images/hero/contoh-foto-hero.jpg',
+    'deskripsi'  => '26 siswa angkatan 2024 di SMK Negeri 1 Pacitan, dengan satu wali kelas dan empat pengurus.',
+    'hero_lead'  => 'Halo, kami XII RPL 1 dari SMK Negeri 1 Pacitan. Mampir sebentar, kenalan sama kami, dan lihat kegiatan kelas di sini.',
 
     'wali_kelas' => [
         'nama'       => 'Nama Wali Kelas',
         'peran'      => 'Wali Kelas',
-        'foto'       => 'assets/images/guru/wali-kelas-placeholder.svg',
-        'keterangan' => 'Pendamping kelas dalam proses belajar, kegiatan, dan perkembangan siswa.',
+        'foto'       => 'assets/images/guru/contoh-foto-guru.jpg',
+        'keterangan' => 'Mendampingi 26 siswa XII RPL 1 di SMK Negeri 1 Pacitan.',
     ],
 
     'statistik'  => [
@@ -35,27 +36,27 @@ return [
         [
             'tahun'      => '2024',
             'judul'      => 'Awal Mula',
-            'deskripsi'  => 'Kelas dibentuk dan mulai membangun kebiasaan belajar bersama.',
+            'deskripsi'  => 'Kelas XII RPL 1 dibentuk di SMK Negeri 1 Pacitan.',
         ],
         [
             'tahun'      => '2025',
             'judul'      => 'Membangun Ritme',
-            'deskripsi'  => 'Berbagai kegiatan kelas dan proyek kecil mulai dijalankan.',
+            'deskripsi'  => 'Susunan pengurus: ketua, wakil ketua, sekretaris, dan bendahara.',
         ],
         [
             'tahun'      => '2026',
             'judul'      => 'Kelas XII',
-            'deskripsi'  => 'Fokus pada proyek akhir, dokumentasi, dan kenangan bersama.',
+            'deskripsi'  => 'Galeri kelas berisi enam foto kegiatan.',
         ],
     ],
 
     'galeri'     => [
-        ['kategori' => 'Kegiatan Kelas', 'judul' => 'Diskusi Kelas',     'foto' => 'assets/images/galeri/placeholder-1.svg'],
-        ['kategori' => 'Kegiatan Kelas', 'judul' => 'Presentasi Bareng', 'foto' => 'assets/images/galeri/placeholder-2.svg'],
-        ['kategori' => 'Proyek',         'judul' => 'Pengerjaan Proyek', 'foto' => 'assets/images/galeri/placeholder-3.svg'],
-        ['kategori' => 'Proyek',         'judul' => 'Uji Coba Aplikasi', 'foto' => 'assets/images/galeri/placeholder-4.svg'],
-        ['kategori' => 'Foto Bersama',   'judul' => 'Foto Kelas',        'foto' => 'assets/images/galeri/placeholder-5.svg'],
-        ['kategori' => 'Foto Bersama',   'judul' => 'Hari Biasa',        'foto' => 'assets/images/galeri/placeholder-6.svg'],
+        ['kategori' => 'Kegiatan Kelas', 'judul' => 'Diskusi Kelas',     'foto' => 'assets/images/galeri/contoh-foto-galeri-1.jpg'],
+        ['kategori' => 'Kegiatan Kelas', 'judul' => 'Presentasi Bareng', 'foto' => 'assets/images/galeri/contoh-foto-galeri-1.jpg'],
+        ['kategori' => 'Proyek',         'judul' => 'Pengerjaan Proyek', 'foto' => 'assets/images/galeri/contoh-foto-galeri-1.jpg'],
+        ['kategori' => 'Proyek',         'judul' => 'Uji Coba Aplikasi', 'foto' => 'assets/images/galeri/contoh-foto-galeri-1.jpg'],
+        ['kategori' => 'Foto Bersama',   'judul' => 'Foto Kelas',        'foto' => 'assets/images/galeri/contoh-foto-galeri-1.jpg'],
+        ['kategori' => 'Foto Bersama',   'judul' => 'Hari Biasa',        'foto' => 'assets/images/galeri/contoh-foto-galeri-1.jpg'],
     ],
 
     'pembuat'    => [

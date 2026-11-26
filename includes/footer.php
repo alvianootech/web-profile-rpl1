@@ -32,7 +32,7 @@ $footerLinks = [
         </div>
 
         <nav class="footer-column" aria-label="Navigasi footer">
-            <h2 class="footer-heading">Link</h2>
+            <h2 class="footer-heading">Navigasi</h2>
             <ul class="footer-links">
                 <?php foreach ($footerLinks as $href => $label): ?>
                     <li>
@@ -45,7 +45,7 @@ $footerLinks = [
         </nav>
 
         <div class="footer-column footer-creator">
-            <h2 class="footer-heading">Created by</h2>
+            <h2 class="footer-heading">Pembuat</h2>
             <div class="creator-list">
                 <?php foreach ($pembuat as $orang): ?>
                     <?php
