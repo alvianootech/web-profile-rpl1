@@ -20,11 +20,11 @@ require __DIR__ . '/includes/header.php';
         <h1>XII <span>RPL 1</span></h1>
         <p class="hero__lead"><?= htmlspecialchars($kelas['hero_lead'], ENT_QUOTES, 'UTF-8') ?></p>
         <div class="hero__actions">
-            <a class="btn btn--primary" href="tentang.php">
+            <a class="btn btn--primary" href="tentang">
                 Tentang Kelas
                 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
             </a>
-            <a class="btn btn--ghost" href="anggota.php">Lihat Anggota</a>
+            <a class="btn btn--ghost" href="anggota">Lihat Anggota</a>
         </div>
         <p class="hero__sign">Salam kenal dari kami</p>
     </div>
@@ -61,7 +61,7 @@ require __DIR__ . '/includes/header.php';
             <p class="eyebrow">Dokumentasi</p>
             <h2>Tiga foto kegiatan</h2>
         </div>
-        <a class="text-link" href="galeri.php">
+        <a class="text-link" href="galeri">
             Lihat galeri
             <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -89,9 +89,9 @@ require __DIR__ . '/includes/header.php';
         <p>Cerita kelas, daftar siswa, dan foto kegiatan.</p>
     </div>
     <div class="cta-band__links">
-        <a class="btn btn--ghost" href="tentang.php">Tentang</a>
-        <a class="btn btn--ghost" href="anggota.php">Anggota</a>
-        <a class="btn btn--ghost" href="galeri.php">Galeri</a>
+        <a class="btn btn--ghost" href="tentang">Tentang</a>
+        <a class="btn btn--ghost" href="anggota">Anggota</a>
+        <a class="btn btn--ghost" href="galeri">Galeri</a>
     </div>
 </section>
 

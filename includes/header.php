@@ -17,6 +17,22 @@ if (!function_exists('rpl_initials')) {
     }
 }
 
+if (!function_exists('rpl_find_siswa')) {
+    /**
+     * Cari siswa berdasarkan nama di daftar $siswa.
+     */
+    function rpl_find_siswa(string $nama, array $daftarSiswa): ?array
+    {
+        $namaDicari = mb_strtolower(trim($nama));
+        foreach ($daftarSiswa as $s) {
+            if (mb_strtolower(trim($s['nama'] ?? '')) === $namaDicari) {
+                return $s;
+            }
+        }
+        return null;
+    }
+}
+
 if (!isset($pageTitle)) {
     $pageTitle = 'XII RPL 1';
 }
@@ -26,10 +42,10 @@ if (!isset($activePage)) {
 }
 
 $navItems = [
-    'index'   => ['label' => 'Beranda', 'href' => 'index.php'],
-    'tentang' => ['label' => 'Tentang', 'href' => 'tentang.php'],
-    'anggota' => ['label' => 'Anggota', 'href' => 'anggota.php'],
-    'galeri'  => ['label' => 'Galeri',  'href' => 'galeri.php'],
+    'index'   => ['label' => 'Beranda', 'href' => './'],
+    'tentang' => ['label' => 'Tentang', 'href' => 'tentang'],
+    'anggota' => ['label' => 'Anggota', 'href' => 'anggota'],
+    'galeri'  => ['label' => 'Galeri',  'href' => 'galeri'],
 ];
 ?>
 <!DOCTYPE html>
@@ -48,7 +64,7 @@ $navItems = [
 
 <header class="site-header">
     <nav class="nav" aria-label="Navigasi utama">
-        <a class="brand" href="index.php">
+        <a class="brand" href="./">
             <img class="brand__logo" src="assets/images/Logo-Kelas-RPL-1.jpg" alt="Logo XII RPL 1">
             <span class="brand__label">
                 XII RPL 1
