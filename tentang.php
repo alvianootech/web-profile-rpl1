@@ -2,6 +2,7 @@
 $pageTitle  = 'Tentang — XII RPL 1';
 $activePage = 'tentang';
 $kelas      = require __DIR__ . '/data/kelas.php';
+$siswa      = require __DIR__ . '/data/siswa.php';
 
 require __DIR__ . '/includes/header.php';
 ?>
@@ -42,14 +43,26 @@ require __DIR__ . '/includes/header.php';
 
     <ul class="pengurus-grid">
         <?php foreach ($kelas['pengurus'] as $pengurus): ?>
+            <?php
+            $dataSiswa = function_exists('rpl_find_siswa') ? rpl_find_siswa($pengurus['nama'], $siswa) : null;
+            $nama = $dataSiswa['nama'] ?? $pengurus['nama'];
+            $jabatan = $pengurus['jabatan'] ?? ($dataSiswa['jabatan'] ?? 'Pengurus');
+            $foto = $dataSiswa['foto'] ?? '';
+            ?>
             <li>
                 <article class="person-card">
-                    <span class="person-card__avatar" aria-hidden="true">
-                        <?= htmlspecialchars(rpl_initials($pengurus['nama']), ENT_QUOTES, 'UTF-8') ?>
-                    </span>
+                    <?php if (!empty($foto) && file_exists(__DIR__ . '/' . $foto)): ?>
+                        <img class="person-card__avatar person-card__avatar--photo"
+                             src="<?= htmlspecialchars($foto, ENT_QUOTES, 'UTF-8') ?>"
+                             alt="Foto <?= htmlspecialchars($nama, ENT_QUOTES, 'UTF-8') ?>">
+                    <?php else: ?>
+                        <span class="person-card__avatar" aria-hidden="true">
+                            <?= htmlspecialchars(rpl_initials($nama), ENT_QUOTES, 'UTF-8') ?>
+                        </span>
+                    <?php endif; ?>
                     <div>
-                        <h3><?= htmlspecialchars($pengurus['nama'], ENT_QUOTES, 'UTF-8') ?></h3>
-                        <p><?= htmlspecialchars($pengurus['jabatan'], ENT_QUOTES, 'UTF-8') ?></p>
+                        <h3><?= htmlspecialchars($nama, ENT_QUOTES, 'UTF-8') ?></h3>
+                        <p><?= htmlspecialchars($jabatan, ENT_QUOTES, 'UTF-8') ?></p>
                     </div>
                 </article>
             </li>

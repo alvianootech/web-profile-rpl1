@@ -26,10 +26,24 @@ return [
     ],
 
     'pengurus'   => [
-        ['nama' => 'Andi Pratama',   'jabatan' => 'Ketua Kelas'],
-        ['nama' => 'Bima Saputra',   'jabatan' => 'Wakil Ketua'],
-        ['nama' => 'Citra Maharani', 'jabatan' => 'Sekretaris'],
-        ['nama' => 'Dimas Ramadhan', 'jabatan' => 'Bendahara'],
+        ['nama' => 'KHAISAN RAIHAN SAPUTRA',     'jabatan' => 'Ketua Kelas'],
+        ['nama' => 'ADHE I GEDHE MADAREZA',      'jabatan' => 'Wakil Ketua'],
+        ['nama' => 'INES ARDYNINGRUM',           'jabatan' => 'Sekretaris 1'],
+        ['nama' => 'RESIKA DIAN PRANGIRA',       'jabatan' => 'Sekretaris 2'],
+        ['nama' => 'ANGGRAENI LYLA NUREFFENDI',  'jabatan' => 'Bendahara 1'],
+    ],
+
+    'sosmed'     => [
+        'instagram' => [
+            'label'  => 'Instagram',
+            'handle' => '@r1volution24._',
+            'url'    => 'https://www.instagram.com/r1volution24._',
+        ],
+        'tiktok'    => [
+            'label'  => 'TikTok',
+            'handle' => '@r1volution24_',
+            'url'    => 'https://www.tiktok.com/@r1volution24_',
+        ],
     ],
 
     'perjalanan' => [

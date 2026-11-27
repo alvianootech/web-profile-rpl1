@@ -17,6 +17,22 @@ if (!function_exists('rpl_initials')) {
     }
 }
 
+if (!function_exists('rpl_find_siswa')) {
+    /**
+     * Cari siswa berdasarkan nama di daftar $siswa.
+     */
+    function rpl_find_siswa(string $nama, array $daftarSiswa): ?array
+    {
+        $namaDicari = mb_strtolower(trim($nama));
+        foreach ($daftarSiswa as $s) {
+            if (mb_strtolower(trim($s['nama'] ?? '')) === $namaDicari) {
+                return $s;
+            }
+        }
+        return null;
+    }
+}
+
 if (!isset($pageTitle)) {
     $pageTitle = 'XII RPL 1';
 }
