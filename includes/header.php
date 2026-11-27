@@ -26,10 +26,10 @@ if (!isset($activePage)) {
 }
 
 $navItems = [
-    'index'   => ['label' => 'Beranda', 'href' => 'index.php'],
-    'tentang' => ['label' => 'Tentang', 'href' => 'tentang.php'],
-    'anggota' => ['label' => 'Anggota', 'href' => 'anggota.php'],
-    'galeri'  => ['label' => 'Galeri',  'href' => 'galeri.php'],
+    'index'   => ['label' => 'Beranda', 'href' => './'],
+    'tentang' => ['label' => 'Tentang', 'href' => 'tentang'],
+    'anggota' => ['label' => 'Anggota', 'href' => 'anggota'],
+    'galeri'  => ['label' => 'Galeri',  'href' => 'galeri'],
 ];
 ?>
 <!DOCTYPE html>
@@ -48,7 +48,7 @@ $navItems = [
 
 <header class="site-header">
     <nav class="nav" aria-label="Navigasi utama">
-        <a class="brand" href="index.php">
+        <a class="brand" href="./">
             <img class="brand__logo" src="assets/images/Logo-Kelas-RPL-1.jpg" alt="Logo XII RPL 1">
             <span class="brand__label">
                 XII RPL 1

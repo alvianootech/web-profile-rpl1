@@ -16,10 +16,10 @@ if (!is_array($pembuat) || $pembuat === []) {
 }
 
 $footerLinks = [
-    'index.php'   => 'Beranda',
-    'tentang.php' => 'Tentang',
-    'anggota.php' => 'Anggota',
-    'galeri.php'  => 'Galeri',
+    './'      => 'Beranda',
+    'tentang' => 'Tentang',
+    'anggota' => 'Anggota',
+    'galeri'  => 'Galeri',
 ];
 ?>
 </main>
